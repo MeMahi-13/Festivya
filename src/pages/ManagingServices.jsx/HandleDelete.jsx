@@ -11,7 +11,7 @@ export const handleDelete = (id, refetch) => {
     confirmButtonText: 'Yes, delete it!'
   }).then((result) => {
     if (result.isConfirmed) {
-      fetch(`/services/${id}`, {
+      fetch(`http://localhost:3000/services/${id}`, {
         method: 'DELETE',
       })
         .then(res => res.json())
