@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import useTitle from "../../Components/useTitle";
 import ServicesCard from "../AllServices/ServiceCard";
 
 const AllServices = () => {
+   useTitle("OurServices|Festivya");
+
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

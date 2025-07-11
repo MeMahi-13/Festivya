@@ -1,11 +1,13 @@
 import { Suspense } from 'react';
 import { bookingsPromise } from '../../api/bookingsApi';
+import useTitle from '../../Components/useTitle';
 import { useAuth } from '../../context/AuthContext';
 import BookingList from './BookingList';
 import BookingStats from './BookingStats';
 
 
 const BookedServices = () => {
+    useTitle("Bookings | Festivya");
   const { user, loading } = useAuth();
 
 if (loading) {

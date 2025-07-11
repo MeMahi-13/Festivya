@@ -5,11 +5,12 @@ import useTitle from "../Components/useTitle";
 import { useAuth } from "../context/AuthContext";
 
 const AddService = () => {
+    useTitle("AddService | Festivya");
   const { user } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
-  useTitle("AddService | Festivya");
+
 
   const handleAddService = async (e) => {
     e.preventDefault();
@@ -44,7 +45,7 @@ const AddService = () => {
           text: "Your event service has been successfully added.",
           icon: "success",
           confirmButtonText: "OK"
-        }).then(() => navigate("/"));
+        }).then(() => navigate("/manageServices"));
       } else {
         setError(result.error || "Service creation failed");
       }

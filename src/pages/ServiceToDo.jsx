@@ -1,7 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
+import useTitle from '../Components/useTitle';
 import { AuthContext } from '../context/AuthContext';
 
 function ServiceToDo() {
+    useTitle('Todo|Festivya');
   const { user } = useContext(AuthContext);
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);

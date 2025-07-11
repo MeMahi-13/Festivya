@@ -1,16 +1,17 @@
 import { Suspense } from "react";
 import { servicesCreatedByPromise } from "../../api/servicesCreatedByPromise";
+import useTitle from "../../Components/useTitle";
 import { useAuth } from "../../context/AuthContext";
 import ServicesList from "./ServicesList";
 
 const ManageServices = () => {
+    useTitle("ManageServices | Festivya");
   const { user } = useAuth();
-  
 
   return (
     <div>
-      <Suspense>
-        <ServicesList servicesCreatedByPromise={servicesCreatedByPromise(user.email)}></ServicesList>
+      <Suspense fallback={<div>Loading services...</div>}>
+        <ServicesList servicesCreatedByPromise={servicesCreatedByPromise(user.email)} />
       </Suspense>
     </div>
   );
