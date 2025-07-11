@@ -11,7 +11,7 @@ export const handleDelete = (id, refetch) => {
     confirmButtonText: 'Yes, delete it!'
   }).then((result) => {
     if (result.isConfirmed) {
-      fetch(`${import.meta.env.VITE_API_URL}/services/${id}`, {
+      fetch(`/services/${id}`, {
         method: 'DELETE',
       })
         .then(res => res.json())
