@@ -36,7 +36,7 @@ const HandleEdit = ({ service, isOpen, onClose, onUpdate }) => {
 
     if (confirmed.isConfirmed) {
       const res = await fetch(
-        `http://localhost:3000/services/${service._id}`,
+        `https://fest-olive.vercel.app/services/${service._id}`,
         {
           method: "PATCH",
           headers: {

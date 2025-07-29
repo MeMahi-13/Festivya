@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { bookingsPromise } from '../../api/bookingsApi';
-import useTitle from '../../Components/useTitle';
+import useTitle from '../../components/useTitle';
 import { useAuth } from '../../context/AuthContext';
 import BookingList from './BookingList';
 import BookingStats from './BookingStats';

@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import Swal from "sweetalert2";
 import registerLottie from "../../src/pages/Lotties/register.json";
-import useTitle from "../Components/useTitle";
+import useTitle from "../components/useTitle";
 import { AuthContext } from "../context/AuthContext";
 
 const Register = () => {
@@ -42,7 +42,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
 
-        fetch(`http://localhost:3000/users`, {
+        fetch(`https://fest-olive.vercel.app/users`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(userProfile),

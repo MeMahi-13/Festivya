@@ -35,7 +35,7 @@ export default function ServiceBooking() {
       serviceStatus: "pending"
     };
     try {
-      const res = await fetch("http://localhost:3000/bookings", {
+      const res = await fetch("https://fest-olive.vercel.app/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(booking)

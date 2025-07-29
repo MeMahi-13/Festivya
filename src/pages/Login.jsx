@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import useTitle from "../Components/useTitle";
+import useTitle from "../components/useTitle";
 import { AuthContext } from "../context/AuthContext";
 const Login = () => {
     //   useTitle("Foodpedia | Login");
@@ -19,7 +19,7 @@ const Login = () => {
      signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         navigate(location.state?.from?.pathname || "/");
       })
       .catch((error) => {

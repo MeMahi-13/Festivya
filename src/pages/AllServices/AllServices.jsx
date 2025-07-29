@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
-import useTitle from "../../Components/useTitle";
+import useTitle from "../../components/useTitle";
 import ServicesCard from "../AllServices/ServiceCard";
 
 const AllServices = () => {
-   useTitle("OurServices|Festivya");
+  useTitle("OurServices|Festivya");
 
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [searchText, setSearchText] = useState(""); 
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:3000/services");
+        const response = await fetch("https://fest-olive.vercel.app/services");
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }

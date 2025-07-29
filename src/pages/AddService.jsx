@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import useTitle from "../Components/useTitle";
+import useTitle from "../components/useTitle";
 import { useAuth } from "../context/AuthContext";
 
 const AddService = () => {
@@ -29,7 +29,7 @@ const AddService = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/services`,
+        `https://fest-olive.vercel.app/services`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

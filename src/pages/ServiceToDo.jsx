@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import useTitle from '../Components/useTitle';
+import useTitle from '../components/useTitle';
 import { AuthContext } from '../context/AuthContext';
 
 function ServiceToDo() {
@@ -14,7 +14,7 @@ function ServiceToDo() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`http://localhost:3000/bookings?providerEmail=${user.email}`);
+      const res = await fetch(`https://fest-olive.vercel.app/bookings?providerEmail=${user.email}`);
       if (!res.ok) throw new Error('Failed to fetch services');
       const data = await res.json();
       setServices(data);
@@ -31,7 +31,7 @@ function ServiceToDo() {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:3000/bookings/${id}`, {
+      const res = await fetch(`https://fest-olive.vercel.app/bookings/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ export const handleDelete = async (id, refetch) => {
     // Proceed if confirmed
     if (result.isConfirmed) {
       // Perform the deletion
-      const response = await fetch(`http://localhost:3000/services/${id}`, {
+      const response = await fetch(`https://fest-olive.vercel.app/services/${id}`, {
         method: 'DELETE',
       });
 

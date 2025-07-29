@@ -1,13 +1,13 @@
 import { Suspense } from 'react';
 import Banner from '../../components/Banner';
-import useTitle from '../../Components/useTitle';
+import useTitle from '../../components/useTitle';
 import HowItWorks from './HowItWorks';
 import PopularServices from './PopularServices';
 import Testimonial from './Testimonial';
 
 const Home = () => {
       useTitle("Home | Festivya");
-    const servicesPromise = fetch('http://localhost:3000/services').then(res => res.json())
+    const servicesPromise = fetch('https://fest-olive.vercel.app/services').then(res => res.json())
 
 
     return (

@@ -33,12 +33,12 @@ export const router = createBrowserRouter([
       {
         path: 'services/:id',
         element: <PrivateRoute><ServiceDetails /></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:3000/services/${params.id}`)
+        loader: ({ params }) => fetch(`https://fest-olive.vercel.app/services/${params.id}`)
       },
       {
         path: '/bookings/:id',
         element: <PrivateRoute><ServiceBooking /></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:3000/services/${params.id}`)
+        loader: ({ params }) => fetch(`https://fest-olive.vercel.app/services/${params.id}`)
         ,
       },
       {
