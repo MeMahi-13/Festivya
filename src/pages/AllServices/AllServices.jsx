@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import Loading from "../../components/Loading";
 import useTitle from "../../components/useTitle";
 import ServicesCard from "../AllServices/ServiceCard";
 
 const AllServices = () => {
   useTitle("OurServices|Festivya");
+
+  
 
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -35,7 +38,7 @@ const AllServices = () => {
   );
 
   if (loading) {
-    return <div className="text-center py-10">Loading services...</div>;
+    return <div className="text-center py-10"><Loading/></div>;
   }
 
   if (error) {

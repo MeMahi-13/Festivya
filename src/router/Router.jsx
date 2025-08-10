@@ -6,6 +6,7 @@ import HomeLayout from "../layout/HomeLayout";
 import AddService from "../pages/AddService";
 import AllServices from '../pages/AllServices/AllServices';
 import BookedServices from "../pages/bookings/BookedServices";
+import Error from "../pages/Error";
 import Home from "../pages/home/Home";
 import Login from "../pages/Login";
 import ManageServices from "../pages/ManagingServices.jsx/ManageServices";
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: HomeLayout,
+    errorElement: <Error/>,
     children: [
       {
         index: true,

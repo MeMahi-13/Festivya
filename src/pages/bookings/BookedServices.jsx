@@ -18,7 +18,7 @@ if (!user) {
 }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-base-200 dark:text-white text-black p-6">
+    <div className="min-h-screen pt-20 bg-white dark:bg-base-200 dark:text-white text-black p-6">
       <BookingStats />
       
       <Suspense fallback={<p className="text-center">Loading your bookings...</p>}>

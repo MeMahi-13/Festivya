@@ -74,7 +74,7 @@ const HandleEdit = ({ service, isOpen, onClose, onUpdate }) => {
             required
           />
           <input
-            className="input bg-pink-100 dark:bg-black text-black dark:text-white border-2 border-black input-bordered w-full"
+            className="input bg-pink-200 dark:bg-black text-black dark:text-white border-2 border-black input-bordered w-full"
             type="number"
             name="price"
             value={formData.price}

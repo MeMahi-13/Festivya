@@ -5,7 +5,7 @@ import profile from "../Lotties/profile.json";
 
 const HowItWorks = () => {
   return (
-   <div className="bg-pink-200 dark:bg-pink-900 text-black py-130 md:py-60 lg:py-60 xl:py-60 relative z-10">
+   <div className="bg-pink-100 dark:bg-pink-900 text-black py-130 md:py-60 lg:py-60 xl:py-60 relative z-10">
 
       <section
         id="how-it-works"

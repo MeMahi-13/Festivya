@@ -8,7 +8,7 @@ const PopJobCard = ({ service }) => {
       : description
     : "";
   return (
-    <div className="p-7 max-w-xl bg-pink-100 dark:bg-pink-900 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="p-7 max-w-xl bg-pink-200 dark:bg-pink-900 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <img
         src={serviceImage}
         alt={serviceName}

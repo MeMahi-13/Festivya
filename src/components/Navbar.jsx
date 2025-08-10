@@ -59,8 +59,8 @@ const Navbar = () => {
 
   const guestLinks = (
     <>
-      <li>
-        <Link to="/" onClick={handleLinkClick}>
+      <li className="font-bold">
+        <Link to="/"  onClick={handleLinkClick} >
           Home
         </Link>
       </li>
@@ -120,7 +120,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-pink-200 dark:bg-pink-900 text-black dark:text-white shadow-sm px-4">
+    <div className="fixed top-0 z-50 navbar bg-pink-200 dark:bg-pink-900 font-bold text-md text-black dark:text-white shadow-sm px-4">
       <div className="navbar-start">
         <div className={`dropdown ${mobileMenuOpen ? "dropdown-open" : ""}`} ref={dropdownRef}>
           <label tabIndex={0} className="btn btn-ghost lg:hidden" onClick={handleToggle}>
@@ -135,7 +135,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul className="menu menu-sm dropdown-content mt-3 w-52 p-2 shadow rounded-box bg-pink-50 dark:bg-pink-900 z-[100]">
+          <ul className="menu menu-sm dropdown-content mt-3 w-52 p-2 shadow rounded-box  dark:bg-pink-50 bg-pink-900 z-[100]">
             {user ? userLinks : guestLinks}
             {user && (
               <li className="mt-2">
@@ -148,7 +148,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="text-5xl font-bold text-pink-700 dark:text-pink-200 font-kapakana"
+          className="text-5xl font-bold bg-pink-200 text-pink-900 dark:text-pink-200 font-kapakana"
           onClick={handleLinkClick}
         >
           Festivya

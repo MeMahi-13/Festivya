@@ -15,7 +15,7 @@ const ServicesList = ({ servicesCreatedByPromise }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-base-200 dark:text-white p-10 text-black">
+    <div className="pt-20 bg-white dark:bg-base-200 dark:text-white p-10 text-black">
       <h2 className="text-3xl py-5 font-bold text-black dark:text-white">
         Services Posted By You
       </h2>

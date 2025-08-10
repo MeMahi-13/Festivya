@@ -57,7 +57,7 @@ const AddService = () => {
 
   return (
     <div className="min-h-screen bg-pink-100 dark:bg-gray-900 p-5 transition duration-300">
-      <div className="max-w-5xl mx-auto my-10 p-8 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg shadow-lg">
+      <div className="max-w-5xl mx-auto my-10 p-8 mt-20 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg shadow-lg">
         <h1 className="text-center text-3xl md:text-4xl font-bold mb-2">
           Offering an Event Service? Let Others Know!
         </h1>

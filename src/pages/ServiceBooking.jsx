@@ -52,7 +52,7 @@ export default function ServiceBooking() {
   };
 
   return (
-    <div className="min-h-screen px-8 py-8 bg-pink-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen px-8 py-8 bg-pink-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div className="flex justify-end">
 
       </div>
@@ -65,7 +65,7 @@ export default function ServiceBooking() {
             {[_id, providerName, price, user.email].map((val, idx) => (
               <div key={idx}>
                 <input
-                  className="input w-full bg-pink-100 dark:bg-green-700 border-pink-300 dark:border-gray-600"
+                  className="input w-full bg-pink-200 dark:bg-green-700 border-pink-300 dark:border-gray-600"
                   value={val}
                 />
               </div>
