@@ -12,7 +12,7 @@ const HowItWorks = () => {
         className="max-w-6xl w-full mx-auto py-12 px-6 bg-white dark:bg-base-200 rounded-2xl absolute z-20 -top-24 left-1/2 transform -translate-x-1/2 shadow-xl"
       >
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-pink-600">How It Works</h2>
+          <h2 className="text-4xl font-bold text-pink-950 dark:text-white">How It Works</h2>
           <p className="text-gray-600 mt-3 text-lg">
             Book or offer services in just a few clicks
           </p>

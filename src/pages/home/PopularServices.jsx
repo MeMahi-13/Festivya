@@ -7,7 +7,7 @@ const PopularServices = ({ servicesPromise }) => {
 
   return (
     <div className="py-12 bg-white dark:bg-base-200">
-      <h1 className="py-10 text-4xl text-center font-bold text-black dark:text-white">
+      <h1 className="py-10 text-4xl text-center font-bold text-pink-950 dark:text-white">
         Our Popular Services
       </h1>
 

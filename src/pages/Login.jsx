@@ -40,7 +40,7 @@ const Login = () => {
   };
   useTitle('Login|Festivya');
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#fefce8] dark:bg-[#1e1e1e] px-4">
+    <div className="font-roboto flex justify-center items-center min-h-screen bg-[#fefce8] dark:bg-[#1e1e1e] px-4">
       <div className="bg-white dark:bg-[#2e2e2e] rounded-2xl shadow-2xl w-full max-w-md p-8 space-y-6">
         <h2 className="text-3xl font-bold text-center text-[#2E7D32] dark:text-[#A5D6A7]">
           Login to Your Account

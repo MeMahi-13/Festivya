@@ -83,7 +83,7 @@ const Register = () => {
   };
   useTitle('Register|Festivya');
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#fffbea] dark:bg-[#1e1e1e] px-4">
+    <div className="font-roboto flex items-center justify-center min-h-screen bg-[#fffbea] dark:bg-[#1e1e1e] px-4">
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-4xl">
 
         {/* Lottie Animation */}

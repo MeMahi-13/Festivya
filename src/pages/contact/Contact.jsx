@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div className="bg-pink-50 dark:bg-base-200  min-h-screen flex items-center justify-center">
       <div className="text-black dark:text-white mx-auto max-w-6xl p-5">
-        <h1 className="text-center dark:text-white text-pink-950 text-5xl md:text-5xl font-semibold p-5">
+        <h1 className="text-center text-4xl font-bold text-pink-950 dark:text-white p-5">
           Connect with Us
         </h1>
 
