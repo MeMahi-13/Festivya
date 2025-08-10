@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import Banner from '../../components/Banner';
 import useTitle from '../../components/useTitle';
+import Contact from '../contact/Contact';
 import HowItWorks from './HowItWorks';
 import PopularServices from './PopularServices';
 import Testimonial from './Testimonial';
@@ -18,6 +19,7 @@ const Home = () => {
                 <PopularServices servicesPromise={servicesPromise} />
             </Suspense>
             <Testimonial />
+            <Contact/>
         </div>
     );
 };

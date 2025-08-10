@@ -135,7 +135,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul className="menu menu-sm dropdown-content mt-3 w-52 p-2 shadow rounded-box  dark:bg-pink-50 bg-pink-900 z-[100]">
+          <ul className="menu menu-sm dropdown-content mt-3 w-52 p-2 shadow rounded-box dark:bg-pink-50 bg-pink-900 z-[100]">
             {user ? userLinks : guestLinks}
             {user && (
               <li className="mt-2">
@@ -148,7 +148,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="text-5xl font-bold bg-pink-200 text-pink-900 dark:text-pink-200 font-kapakana"
+          className="text-5xl font-bold  text-pink-900 dark:text-pink-200 font-kapakana"
           onClick={handleLinkClick}
         >
           Festivya
