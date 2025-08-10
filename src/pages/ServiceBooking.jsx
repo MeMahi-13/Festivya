@@ -52,7 +52,7 @@ export default function ServiceBooking() {
   };
 
   return (
-    <div className=" font-roboto min-h-screen px-8 py-8 bg-pink-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="pt-20 font-roboto min-h-screen px-8 py-8 bg-pink-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div className="flex justify-end">
 
       </div>

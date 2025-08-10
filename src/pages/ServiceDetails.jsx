@@ -14,7 +14,7 @@ const ServiceDetails = () => {
   } = useLoaderData();
 
   return (
-    <div className="font-roboto bg-white dark:bg-base-200">
+    <div className="pt-15 font-roboto bg-white dark:bg-base-200">
       <div className="max-w-4xl mx-auto py-12 px-6">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
           <img

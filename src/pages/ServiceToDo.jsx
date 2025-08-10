@@ -51,7 +51,7 @@ function ServiceToDo() {
   if (error) return <p className="text-center text-red-500 mt-10">{error}</p>;
 
   return (
-    <div className='font-roboto bg-pink-100 dark:bg-base-200'>
+    <div className='pt-15 font-roboto bg-pink-100 dark:bg-base-200'>
       <div className="max-w-5xl mx-auto px-4 py-8">
         <h1 className="text-3xl font-semibold text-center mb-6 dark:text-white text-black">Services To Do</h1>
 
