@@ -46,7 +46,7 @@ const AllServices = () => {
   }
 
   return (
-    <section className="py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section className="font-roboto py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <h1 className="py-10 text-4xl text-center font-bold text-black dark:text-white">
         Explore Our Services
       </h1>

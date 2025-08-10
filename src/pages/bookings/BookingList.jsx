@@ -5,7 +5,7 @@ const BookingList = ({ bookingsPromise }) => {
   const bookings = use(bookingsPromise);
 
   return (
-    <div>
+    <div className="font-roboto">
       <h1 className="text-2xl font-bold m-10">
         Your Bookings so far: {bookings.length}
       </h1>

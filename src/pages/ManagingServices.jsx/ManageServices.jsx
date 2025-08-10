@@ -10,7 +10,7 @@ const ManageServices = () => {
   
 
   return (
-    <div className="bg-pink-50" >
+    <div className="font-roboto bg-pink-50" >
       <Suspense fallback={<div>Loading services...</div>}>
         <ServicesList servicesCreatedByPromise={servicesCreatedByPromise(user.email)} />
       </Suspense>

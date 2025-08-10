@@ -120,7 +120,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 z-50 navbar bg-pink-200 dark:bg-pink-900 font-bold text-md text-black dark:text-white shadow-sm px-4">
+    <div className="font-roboto fixed top-0 z-50 navbar bg-pink-200 dark:bg-pink-900 font-bold text-md text-black dark:text-white shadow-sm px-4">
       <div className="navbar-start">
         <div className={`dropdown ${mobileMenuOpen ? "dropdown-open" : ""}`} ref={dropdownRef}>
           <label tabIndex={0} className="btn btn-ghost lg:hidden" onClick={handleToggle}>
