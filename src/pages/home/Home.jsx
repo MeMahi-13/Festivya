@@ -12,7 +12,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='font-roboto'>
             <Banner />
             <HowItWorks />
             <Suspense fallback={'Loading Popular Jobs'}>
