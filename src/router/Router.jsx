@@ -5,6 +5,7 @@ import AuthLayout from "../layout/AuthLayout";
 import HomeLayout from "../layout/HomeLayout";
 import AddService from "../pages/AddService";
 import AllServices from '../pages/AllServices/AllServices';
+import Blog from "../pages/Blog";
 import BookedServices from "../pages/bookings/BookedServices";
 import Error from "../pages/Error";
 import Home from "../pages/home/Home";
@@ -58,7 +59,13 @@ export const router = createBrowserRouter([
        {
          path: '/serviceToDo',
         element: <PrivateRoute><ServiceToDo /></PrivateRoute>,
-      }
+      },
+      {
+         path: '/blog',
+        element: <Blog/>,
+      },
+      
+
 
 
     ]

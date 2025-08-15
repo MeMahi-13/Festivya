@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import Banner from '../../components/Banner';
 import useTitle from '../../components/useTitle';
 import Contact from '../contact/Contact';
+import PackageOffers from '../PackageOffers';
 import HowItWorks from './HowItWorks';
 import PopularServices from './PopularServices';
 import Testimonial from './Testimonial';
@@ -18,7 +19,9 @@ const Home = () => {
             <Suspense fallback={'Loading Popular Jobs'}>
                 <PopularServices servicesPromise={servicesPromise} />
             </Suspense>
+            <PackageOffers/>
             <Testimonial />
+            
             <Contact/>
         </div>
     );

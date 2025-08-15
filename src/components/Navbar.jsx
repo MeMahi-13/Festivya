@@ -69,6 +69,11 @@ const Navbar = () => {
           Services
         </Link>
       </li>
+       <li>
+        <Link to="/blog" onClick={handleLinkClick}>
+          Blogs
+        </Link>
+      </li>
       <li>
         <Link to="/auth/login" onClick={handleLinkClick}>
           Login
@@ -77,48 +82,54 @@ const Navbar = () => {
     </>
   );
 
-  const userLinks = (
-    <>
-      <li>
-        <Link to="/" onClick={handleLinkClick}>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/all-services" onClick={handleLinkClick}>
-          Services
-        </Link>
-      </li>
-      <li tabIndex={0}>
-        <details ref={dashboardDetailsRef}>
-          <summary className="cursor-pointer">Dashboard</summary>
-          <ul className="p-2 bg-pink-100 dark:bg-pink-700 rounded-md shadow z-[100]">
-            <li>
-              <Link to="/addService" onClick={handleLinkClick}>
-                Add Service
-              </Link>
-            </li>
-            <li>
-              <Link to="/manageServices" onClick={handleLinkClick}>
-                Manage Service
-              </Link>
-            </li>
-            <li>
-              <Link to="/bookedServices" onClick={handleLinkClick}>
-                Booked Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/serviceToDo" onClick={handleLinkClick}>
-                Service To Do
-              </Link>
-            </li>
-          </ul>
-        </details>
-      </li>
-    </>
-  );
+const userLinks = (
+  <>
+    <li>
+      <Link to="/" onClick={handleLinkClick}>
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="/all-services" onClick={handleLinkClick}>
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/blog" onClick={handleLinkClick}>
+        Blogs
+      </Link>
+    </li>
+    <li tabIndex={0}>
+      <details ref={dashboardDetailsRef}>
+        <summary className="cursor-pointer">Dashboard</summary>
+        <ul className="p-2 bg-pink-100 dark:bg-pink-700 rounded-md shadow z-[100]">
+          <li>
+            <Link to="/addService" onClick={handleLinkClick}>
+              Add Service
+            </Link>
+          </li>
+          <li>
+            <Link to="/manageServices" onClick={handleLinkClick}>
+              Manage Service
+            </Link>
+          </li>
+          <li>
+            <Link to="/bookedServices" onClick={handleLinkClick}>
+              Booked Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/serviceToDo" onClick={handleLinkClick}>
+              Service To Do
+            </Link>
+          </li>
+        </ul>
+      </details>
+    </li>
+  </>
+);
 
+   
   return (
     <div className="font-roboto fixed top-0 z-50 navbar bg-pink-200 dark:bg-pink-900 font-bold text-md text-black dark:text-white shadow-sm px-4">
       <div className="navbar-start">

@@ -19,7 +19,7 @@ const ServicesCard = ({ service }) => {
     : "";
 
   return (
-    <div className="p-7 max-w-5xl bg-pink-100 dark:bg-pink-900 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="p-7 max-w-4xl bg-pink-100 dark:bg-pink-900 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <img src={serviceImage} alt={serviceName} className="h-48 w-full object-cover" />
       <div className="p-6">
         <h2 className="text-xl font-bold text-black dark:text-white mb-2">{serviceName}</h2>
